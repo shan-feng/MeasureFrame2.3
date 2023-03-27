@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C93EEE47-9D96-4025-86FB-54CA1761CCDA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Measure</RootNamespace>
+    <AssemblyName>Measure</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\000_exe\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="halcondotnet, Version=18.11.0.1, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\Debug\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="hdevenginedotnet, Version=18.11.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\Debug\hdevenginedotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CCalculate.cs" />
+    <Compile Include="CCalib_Coord.cs" />
+    <Compile Include="CCoordinate.cs" />
+    <Compile Include="CCorrect_Position.cs" />
+    <Compile Include="CDataCalculate.cs" />
+    <Compile Include="CDataSave.cs" />
+    <Compile Include="CDelay.cs" />
+    <Compile Include="CDistortionCalib.cs" />
+    <Compile Include="CHalconEngine.cs" />
+    <Compile Include="CHelper.cs" />
+    <Compile Include="CImageMosaic.cs" />
+    <Compile Include="CImageReg_Area.cs" />
+    <Compile Include="CImageReg_Line.cs" />
+    <Compile Include="CMeasure1D.cs" />
+    <Compile Include="CMeasureCell.cs" />
+    <Compile Include="CMeasure_2D.cs" />
+    <Compile Include="CMeasure_Circle.cs" />
+    <Compile Include="CMeasure_Ellipse.cs" />
+    <Compile Include="CMeasure_Line.cs" />
+    <Compile Include="CMeasure_Roi.cs" />
+    <Compile Include="CMeasure_Show.cs" />
+    <Compile Include="CProject.cs" />
+    <Compile Include="CRectArray.cs" />
+    <Compile Include="CResultView2.cs" />
+    <Compile Include="CRoteCenterCalib.cs" />
+    <Compile Include="CSerialComm.cs" />
+    <Compile Include="CStructurePoint.cs" />
+    <Compile Include="CTCP_Send.cs" />
+    <Compile Include="Enum_Info.cs" />
+    <Compile Include="HMeasureSet.cs" />
+    <Compile Include="HMeasureSYS.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Struct_Info.cs" />
+    <Compile Include="TCPServer2.cs" />
+    <Compile Include="VBAEngine\GlobalObject.cs" />
+    <Compile Include="VBAEngine\XVBAEngine.cs" />
+    <Compile Include="VBA_Function.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcqDevice\AcqDevice.csproj">
+      <Project>{2efcb6cb-12a9-4082-9ec1-99f59423d326}</Project>
+      <Name>AcqDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CPublicDefine\CPublicDefine.csproj">
+      <Project>{5a171807-e17c-4a18-9732-357c73a366c9}</Project>
+      <Name>CPublicDefine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HalconControl\HalconControl.csproj">
+      <Project>{4f95d906-4ce8-42ec-af23-55f5a12897f1}</Project>
+      <Name>HalconControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{926397d3-28dc-4f5f-a37e-ba8fef9d6966}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HEViewer\HEViewer.csproj">
+      <Project>{aba4097d-5ee1-42ff-a581-85db7da0de35}</Project>
+      <Name>HEViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HWindow_HE\HWindow_HE.csproj">
+      <Project>{9baa53fd-89b5-43e2-ac59-a27b006debb6}</Project>
+      <Name>HWindow_HE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

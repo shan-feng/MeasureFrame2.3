@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2EFCB6CB-12A9-4082-9EC1-99F59423D326}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AcqDevice</RootNamespace>
+    <AssemblyName>AcqDevice</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\000_exe\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\AcqDevice.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\AcqDevice.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Itanium'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\AcqDevice.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Itanium'">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\AcqDevice.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\000_exe\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\AcqDevice.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\AcqDevice.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Basler.Pylon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e389355f398382ab, processorArchitecture=x86" />
+    <Reference Include="DVPCameraCS">
+      <HintPath>dll\DVPCameraCS.dll</HintPath>
+    </Reference>
+    <Reference Include="GxIAPINET">
+      <HintPath>C:\Program Files\Daheng Imaging\GalaxySDK\APIDll\Win64\.NET4.0\GxIAPINET.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet, Version=18.11.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\Debug\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="MvCameraControl.Net">
+      <HintPath>..\..\000_dll+lib\dll\X64\MvCameraControl.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TIS.Imaging.ICImagingControl34">
+      <HintPath>..\..\000_dll+lib\dll\X64\TIS.Imaging.ICImagingControl34.dll</HintPath>
+    </Reference>
+    <Reference Include="uEyeDotNet">
+      <HintPath>dll\uEyeDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcqAreaDeviceBase.cs" />
+    <Compile Include="AcqDeviceBase.cs" />
+    <Compile Include="AcqFolder_Area.cs" />
+    <Compile Include="AcqFolder_Line.cs" />
+    <Compile Include="AcqLineDeviceBase.cs" />
+    <Compile Include="Basler\AcqBasler.cs" />
+    <Compile Include="Basler\Frm_AcqBasler_Attr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basler\Frm_AcqBasler_Attr.Designer.cs">
+      <DependentUpon>Frm_AcqBasler_Attr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Daheng\AcqDaheng.cs" />
+    <Compile Include="Daheng\Frm_AcqDahengr_Attr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Daheng\Frm_AcqDahengr_Attr.Designer.cs">
+      <DependentUpon>Frm_AcqDahengr_Attr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Do3Think\AcqDo3Think.cs" />
+    <Compile Include="Do3Think\frm_AcqDo3Think.cs" />
+    <Compile Include="Enum_Info.cs" />
+    <Compile Include="HKVision\AcqHKVision.cs" />
+    <Compile Include="HKVision\frm_AcqHKVision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HKVision\frm_AcqHKVision.Designer.cs">
+      <DependentUpon>frm_AcqHKVision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDS_uEye\AcqIDS_uEye.cs" />
+    <Compile Include="IDS_uEye\CameraControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IDS_uEye\CameraControl.designer.cs">
+      <DependentUpon>CameraControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDS_uEye\FormatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IDS_uEye\FormatControl.designer.cs">
+      <DependentUpon>FormatControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDS_uEye\IControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IDS_uEye\PictureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IDS_uEye\PictureControl.designer.cs">
+      <DependentUpon>PictureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDS_uEye\frm_AcqIDS_uEyeAttr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDS_uEye\frm_AcqIDS_uEyeAttr.designer.cs">
+      <DependentUpon>frm_AcqIDS_uEyeAttr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDS_uEye\SizeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IDS_uEye\SizeControl.designer.cs">
+      <DependentUpon>SizeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDS_uEye\TriggerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IDS_uEye\TriggerControl.designer.cs">
+      <DependentUpon>TriggerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\AcqImaging.cs" />
+    <Compile Include="Imaging\frm_AcqImaging.cs" />
+    <Compile Include="Keyence\AcqKeyenceLaser.cs" />
+    <Compile Include="Keyence\NativeMethods.cs" />
+    <Compile Include="MeLaser\AcqMelLaser.cs" />
+    <Compile Include="MeLaser\CLLTI.cs" />
+    <Compile Include="MeLaser\frm_AcqMeLaser_Attr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeLaser\frm_AcqMeLaser_Attr.designer.cs">
+      <DependentUpon>frm_AcqMeLaser_Attr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MindVision\AcqMindVision.cs" />
+    <Compile Include="MindVision\frm_AcqMindWision.cs" />
+    <Compile Include="MindVision\MVSDK.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Struct_Info.cs" />
+    <Compile Include="SVS_hr\AcqSVS_hr.cs" />
+    <Compile Include="SVS_hr\frm_AcqSVS_hrAttr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SVS_hr\frm_AcqSVS_hrAttr.Designer.cs">
+      <DependentUpon>frm_AcqSVS_hrAttr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SVS_hr\GigeApi.cs" />
+    <Compile Include="WenglorMEL\AcqWenglorLaser.cs" />
+    <Compile Include="WenglorMEL\frm_AcqWenglorLaser_Attr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WenglorMEL\frm_AcqWenglorLaser_Attr.designer.cs">
+      <DependentUpon>frm_AcqWenglorLaser_Attr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WenglorMEL\Wenglor_SDK.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Basler\Frm_AcqBasler_Attr.resx">
+      <DependentUpon>Frm_AcqBasler_Attr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daheng\Frm_AcqDahengr_Attr.resx">
+      <DependentUpon>Frm_AcqDahengr_Attr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HKVision\frm_AcqHKVision.resx">
+      <DependentUpon>frm_AcqHKVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDS_uEye\CameraControl.resx">
+      <DependentUpon>CameraControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDS_uEye\FormatControl.resx">
+      <DependentUpon>FormatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDS_uEye\PictureControl.resx">
+      <DependentUpon>PictureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDS_uEye\frm_AcqIDS_uEyeAttr.resx">
+      <DependentUpon>frm_AcqIDS_uEyeAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDS_uEye\SizeControl.resx">
+      <DependentUpon>SizeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDS_uEye\TriggerControl.resx">
+      <DependentUpon>TriggerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeLaser\frm_AcqMeLaser_Attr.resx">
+      <DependentUpon>frm_AcqMeLaser_Attr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SVS_hr\frm_AcqSVS_hrAttr.resx">
+      <DependentUpon>frm_AcqSVS_hrAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WenglorMEL\frm_AcqWenglorLaser_Attr.resx">
+      <DependentUpon>frm_AcqWenglorLaser_Attr.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CPublicDefine\CPublicDefine.csproj">
+      <Project>{5A171807-E17C-4A18-9732-357C73A366C9}</Project>
+      <Name>CPublicDefine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HalconControl\HalconControl.csproj">
+      <Project>{4F95D906-4CE8-42EC-AF23-55F5A12897F1}</Project>
+      <Name>HalconControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{926397D3-28DC-4F5F-A37E-BA8FEF9D6966}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Basler\Basler.Pylon.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

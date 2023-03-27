@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0CB3A21-12DE-4BCA-BDA4-8EEF296A173E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MeasureFrame</RootNamespace>
+    <AssemblyName>MeasureFrame</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.3.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\000_exe\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Measure_Sys.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Measure_Sys.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Itanium'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Measure_Sys.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Itanium'">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Measure_Sys.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\000_exe\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Measure_Sys.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Measure_Sys.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DVPCameraCS, Version=1.0.2.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\DVPCameraCS.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet, Version=18.11.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\Debug\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Ookii.Dialogs.WinForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\000_exe\Debug\Ookii.Dialogs.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="ScintillaNET">
+      <HintPath>Dll\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IUI\frm_AutoRun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_AutoRun.Designer.cs">
+      <DependentUpon>frm_AutoRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_CameraRateSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_CameraRateSet.Designer.cs">
+      <DependentUpon>frm_CameraRateSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_DisObjList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_DisObjList.Designer.cs">
+      <DependentUpon>frm_DisObjList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Flow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Flow.Designer.cs">
+      <DependentUpon>frm_Flow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_ResultView2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_ResultView2.Designer.cs">
+      <DependentUpon>frm_ResultView2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_Delay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_Delay.Designer.cs">
+      <DependentUpon>frm_Unit_Delay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_HalconEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_HalconEngine.Designer.cs">
+      <DependentUpon>frm_Unit_HalconEngine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_MeasureShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_MeasureShow.Designer.cs">
+      <DependentUpon>frm_Unit_MeasureShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_StructurePoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_StructurePoint.Designer.cs">
+      <DependentUpon>frm_Unit_StructurePoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_DistortionCalib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_DistortionCalib.Designer.cs">
+      <DependentUpon>frm_Unit_DistortionCalib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Progress.Designer.cs">
+      <DependentUpon>frm_Progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_ProjectList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_ProjectList.Designer.cs">
+      <DependentUpon>frm_ProjectList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_RegImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_RegImg.Designer.cs">
+      <DependentUpon>frm_RegImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_TCP_IP_Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_TCP_IP_Server.Designer.cs">
+      <DependentUpon>frm_TCP_IP_Server.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_SerialComm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_SerialComm.Designer.cs">
+      <DependentUpon>frm_Unit_SerialComm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_CalibCoord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_CalibCoord.Designer.cs">
+      <DependentUpon>frm_Unit_CalibCoord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_CorrectPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_CorrectPosition.Designer.cs">
+      <DependentUpon>frm_Unit_CorrectPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Acquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Acquipment.Designer.cs">
+      <DependentUpon>frm_Acquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_RectArray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_RectArray.Designer.cs">
+      <DependentUpon>frm_RectArray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_Calculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_Calculate.Designer.cs">
+      <DependentUpon>frm_Unit_Calculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_DataSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_DataSave.Designer.cs">
+      <DependentUpon>frm_Unit_DataSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_ImageAreaReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_ImageAreaReg.Designer.cs">
+      <DependentUpon>frm_Unit_ImageAreaReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_RectArray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_RectArray.Designer.cs">
+      <DependentUpon>frm_Unit_RectArray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit.Designer.cs">
+      <DependentUpon>frm_Unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_Coordinate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_Coordinate.Designer.cs">
+      <DependentUpon>frm_Unit_Coordinate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_Measure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_Measure.Designer.cs">
+      <DependentUpon>frm_Unit_Measure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_MeasureCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_MeasureCircle.Designer.cs">
+      <DependentUpon>frm_Unit_MeasureCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_MeasureEllipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_MeasureEllipse.Designer.cs">
+      <DependentUpon>frm_Unit_MeasureEllipse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_MeasureLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_MeasureLine.Designer.cs">
+      <DependentUpon>frm_Unit_MeasureLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_ImageBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_ImageBase.Designer.cs">
+      <DependentUpon>frm_Unit_ImageBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_TcpSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_TcpSend.Designer.cs">
+      <DependentUpon>frm_Unit_TcpSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_RoteCenterCalib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_RoteCenterCalib.Designer.cs">
+      <DependentUpon>frm_Unit_RoteCenterCalib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_VariableSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_VariableSetting.Designer.cs">
+      <DependentUpon>frm_VariableSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_ViewLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_ViewLog.Designer.cs">
+      <DependentUpon>frm_ViewLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_ImageLineReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_ImageLineReg.Designer.cs">
+      <DependentUpon>frm_Unit_ImageLineReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_DataCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_DataCalculate.Designer.cs">
+      <DependentUpon>frm_Unit_DataCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_ResultView2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUI\frm_Unit_ResultView2.Designer.cs">
+      <DependentUpon>frm_Unit_ResultView2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUI\MeasureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IUI\MeasureControl.Designer.cs">
+      <DependentUpon>MeasureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticTCPIP.cs" />
+    <EmbeddedResource Include="IUI\frm_Acquipment.resx">
+      <DependentUpon>frm_Acquipment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_AutoRun.resx">
+      <DependentUpon>frm_AutoRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_CameraRateSet.resx">
+      <DependentUpon>frm_CameraRateSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_DisObjList.resx">
+      <DependentUpon>frm_DisObjList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Flow.resx">
+      <DependentUpon>frm_Flow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_ResultView2.resx">
+      <DependentUpon>frm_ResultView2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_Delay.resx">
+      <DependentUpon>frm_Unit_Delay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_DistortionCalib.resx">
+      <DependentUpon>frm_Unit_DistortionCalib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Progress.resx">
+      <DependentUpon>frm_Progress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_ProjectList.resx">
+      <DependentUpon>frm_ProjectList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_RectArray.resx">
+      <DependentUpon>frm_RectArray.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_RegImg.resx">
+      <DependentUpon>frm_RegImg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_TCP_IP_Server.resx">
+      <DependentUpon>frm_TCP_IP_Server.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_HalconEngine.resx">
+      <DependentUpon>frm_Unit_HalconEngine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_MeasureShow.resx">
+      <DependentUpon>frm_Unit_MeasureShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_RoteCenterCalib.resx">
+      <DependentUpon>frm_Unit_RoteCenterCalib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_SerialComm.resx">
+      <DependentUpon>frm_Unit_SerialComm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_Calculate.resx">
+      <DependentUpon>frm_Unit_Calculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_CalibCoord.resx">
+      <DependentUpon>frm_Unit_CalibCoord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_CorrectPosition.resx">
+      <DependentUpon>frm_Unit_CorrectPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_DataSave.resx">
+      <DependentUpon>frm_Unit_DataSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_ImageAreaReg.resx">
+      <DependentUpon>frm_Unit_ImageAreaReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_RectArray.resx">
+      <DependentUpon>frm_Unit_RectArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit.resx">
+      <DependentUpon>frm_Unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_Coordinate.resx">
+      <DependentUpon>frm_Unit_Coordinate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_Measure.resx">
+      <DependentUpon>frm_Unit_Measure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_MeasureCircle.resx">
+      <DependentUpon>frm_Unit_MeasureCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_MeasureEllipse.resx">
+      <DependentUpon>frm_Unit_MeasureEllipse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_MeasureLine.resx">
+      <DependentUpon>frm_Unit_MeasureLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_ImageBase.resx">
+      <DependentUpon>frm_Unit_ImageBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_StructurePoint.resx">
+      <DependentUpon>frm_Unit_StructurePoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_TcpSend.resx">
+      <DependentUpon>frm_Unit_TcpSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_VariableSetting.resx">
+      <DependentUpon>frm_VariableSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_ViewLog.resx">
+      <DependentUpon>frm_ViewLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_ImageLineReg.resx">
+      <DependentUpon>frm_Unit_ImageLineReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_DataCalculate.resx">
+      <DependentUpon>frm_Unit_DataCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\frm_Unit_ResultView2.resx">
+      <DependentUpon>frm_Unit_ResultView2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUI\MeasureControl.resx">
+      <DependentUpon>MeasureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcqDevice\AcqDevice.csproj">
+      <Project>{2EFCB6CB-12A9-4082-9EC1-99F59423D326}</Project>
+      <Name>AcqDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CPublicDefine\CPublicDefine.csproj">
+      <Project>{5A171807-E17C-4A18-9732-357C73A366C9}</Project>
+      <Name>CPublicDefine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HalconControl\HalconControl.csproj">
+      <Project>{4F95D906-4CE8-42EC-AF23-55F5A12897F1}</Project>
+      <Name>HalconControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{926397D3-28DC-4F5F-A37E-BA8FEF9D6966}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HEViewer\HEViewer.csproj">
+      <Project>{ABA4097D-5EE1-42FF-A581-85DB7DA0DE35}</Project>
+      <Name>HEViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HWindow_HE\HWindow_HE.csproj">
+      <Project>{9baa53fd-89b5-43e2-ac59-a27b006debb6}</Project>
+      <Name>HWindow_HE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Measure\Measure.csproj">
+      <Project>{c93eee47-9d96-4025-86fb-54ca1761ccda}</Project>
+      <Name>Measure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormsUI\WinFormsUI.csproj">
+      <Project>{c75532c4-765b-418e-b09b-46d36b2abdb1}</Project>
+      <Name>WinFormsUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_stepforward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_step.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_open_prog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_call_stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_read_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IK_128X128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_ocr_tfb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_help_locate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_lineal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_gen_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_gen_ellipse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_3d_plot_axes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_gen_rect1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_aspect_window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_generate_code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_pref_procs_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_roi_op_add_roi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_open_event_log_wnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_open_graphics_wnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_aspect_window1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_open_prog_line_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_communication_tcp_ip.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_3d_plot_mode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cor001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cor002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cor003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cor004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrawPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Point2Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cross.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
